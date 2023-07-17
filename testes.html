@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <script>
+    function click(id)
+{
+    const p = document.getElementById('p');
+
+    var element = document.getElementById(id);
+    if(element.click)
+        element.click();
+    else if(document.createEvent)
+    {
+        var eventObj = document.createEvent('MouseEvents');
+        eventObj.initEvent('click',true,true);
+        element.dispatchEvent(eventObj);
+
+        p.style.
+    }
+}
+
+click('el');
+
+</script>
+
+
+<button id="el" onclick="alert('teste')">
+teste
+</button>
+
+<p id="p" style="opacity: 0;"> hora de codar</p>
+</body>
+</html>

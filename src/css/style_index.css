@@ -1,0 +1,228 @@
+
+/*CENARIO - INDEX*/
+
+body{
+    background: rgb(0, 0, 0); ; /*É PRA SER NEGRO SOLIDO. plano de fundo*/ 
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.cenario img{
+    width: 140vh;
+    display: block;
+}
+
+
+/*CENARIOS DIVERSOS -index*/
+
+.cenario_historia{
+
+    display: none;
+    align-items: center;
+
+}
+.cenario_historia .img_historia{
+
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+}
+.Prateleiras, .mosca{
+    position: absolute;
+    z-index: 10;
+}
+h4{
+    position: absolute; /*alinha a direita*/
+    
+    color: rgb(255, 255, 255);
+    z-index: 3;
+}
+
+.sem_img{
+
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    font-size: 200%;
+    background: linear-gradient(90deg, rgba(255, 254, 254, 0) 50%, rgb(3, 2, 0) 100%);
+
+}
+
+.com_img{
+
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 40%;
+    font-size: 200%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.9290091036414566) 0%, rgba(0, 0, 0, 0.548) 50%, rgba(0,0,0,0.8785889355742297) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(3, 2, 0, 0.253) 100%);
+}
+
+
+
+
+
+
+
+
+
+/*Configurando a direita da tela*/
+.containe{
+    display: block; /*poe as coisas uma a baixo da outra*/
+    z-index: 22;
+}
+.lateral{
+    top: 0; /*gruda a "lateral" no topo (margim de cima = 0)*/
+    display: flex;  /*coloca os itens de lado*/
+    background: rgba(17, 17, 17);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.488) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+    /*plano de fundo meio trasparente*/
+    position: fixed; /*alinha a direita*/
+    right: 0; /*alinha a direita*/
+
+}
+
+/*CONFIGURANDO O MENU*/
+
+li{
+    padding: 0 0 20px 0; /*da espaço entre os itens*/
+    border-bottom: 3px rgb(255, 255, 255) ; /*ajusta a borda de baixo dos itens do menu*/
+    border-left: 0px; /*apaga a borda dos lados*/
+    border-right: 0px; /*apaga a borda dos lados*/
+    border-style: solid; /*da estilo a borda*/
+    
+}
+
+.icon_nome{
+
+    text-transform: uppercase; /*todas as letras em maiusculo*/
+    font-weight: bolder; /*letra em negrito*/
+    font-size: 15px; /*temanho da letra*/
+    padding: 10px; /*da espaço entre os itens*/
+    text-align: center; /*centraliza o texto*/
+    color: rgb(214, 214, 214);
+    
+}
+
+.icon{
+    margin-left: 30%; /*tentativa de alinhamento*/
+    width: 40px; /*diminui o tamanho dos icones*/
+}
+
+/*CONFIGURANDO AS COISAS DO MENU (depois de clicar na bolsa aparecer o inventario, quando clicar no avatar
+aparecer o avatar...)*/
+
+.coisas_menu{
+    
+    border-bottom: 3px rgb(255, 255, 255) ; /*ajusta a borda de baixo dos itens do menu*/
+    border-style: solid; /*da estilo a borda*/
+    padding: 0 15px 0 15px; /*acerta a margem*/
+    border-bottom: none;
+    display: flex;
+}
+
+    /*Configurando HISTORIA do menu*/
+
+
+    
+    h2{
+        background-color: black;
+        text-align: center; /*centraliza o texto*/
+        margin: 10px;/*acrecenta margem*/
+        padding: 0 15px 0 15px; /*acerta a margem*/
+        color: rgb(214, 214, 214);
+    }
+
+    .p_historia{
+        margin: -20px 5px 0 -70px;
+        padding-right: 20px;
+        text-align: start;
+        white-space: pre-wrap;
+        color: rgb(214, 214, 214);
+        font-size: 16;
+    }
+
+
+/*CONFIGURANDO AS OPSOES*/
+
+.Questoes_dado{
+    position: absolute; /*alinha em baixo */
+    bottom: 0; /*alinha em baixo */
+    
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.488) 0%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%);
+
+    background: linear-gradient(2deg, rgba(0,0,0,1) 20%, rgba(22, 22, 22, 0.1) 100%);
+    
+    padding-right: calc(40% + 6px); /*toma toda a parte de baixo - as bordas */
+
+    border-bottom: 5px;
+    border: 3px rgb(0, 0, 0) ; /*ajusta a borda*/
+    border-right: 0;
+    border-style: solid; /*da estilo a borda*/
+    display: flex;
+}
+
+.questoes{
+    display: flex;
+    margin-left: 20px;
+    padding-top: 15px; /*alinha em cima*/
+    width: 100%;
+    height: 100%;
+
+}
+.questoes p{
+    padding: 5px;
+    color: white;
+    margin-bottom: 20px;
+    padding-right: 40vh;
+    font-size: 20px;
+}
+
+.questoes_esquerda{
+    padding-right: 60px;
+}
+
+
+.select_1, .botao_dado{
+    cursor: pointer;/*maosinha ao se aprosimar do botao*/
+}
+
+/*CONFIGURANDO OS DADO*/
+
+
+.dado{
+    
+    padding-right:  60vh;
+    padding-top: 3vh;
+    padding-left: 15vh;
+    padding-bottom: 20px;
+
+    font-size: 20px;
+    display: block;
+    position: fixed;
+    right: 0;
+    width: 0;
+    margin: 0;
+    color: aliceblue;
+    border: 0;
+    border-left: 5px rgb(0, 0, 0) ; /*ajusta a borda*/
+    border-style: solid; /*da estilo a borda*/
+    
+}
+
+.botao_dado{
+    margin-top: 8vh;
+    margin-left: 10vh;
+    padding: 10px;
+    font-size: 22px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    border: 2px black solid;
+    color: white;
+}
+
+
